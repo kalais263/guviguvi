@@ -1,4 +1,4 @@
-a=input()
-b=list(x)
-b[::2],b[1::2]=b[1::2],b[::2]
-print(''.join(y))
+a=list(input())
+for i in range(0,len(a),2):
+  a[i],a[i+1]=a[i+1],a[i]
+print("".join(a))
