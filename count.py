@@ -1,3 +1,5 @@
 num=input()
-a=len(num)
-print(a)
+t=[]
+for i in num:
+  t.append(i)
+print(len(t))
