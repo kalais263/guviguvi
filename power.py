@@ -1,2 +1,3 @@
 num=int(input())
-print(num*2)
+b=num*2
+print(b)
