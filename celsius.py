@@ -1,2 +1,4 @@
-a=int(input())
-print(a+273)
+a=input()
+b=int(a)
+c=b+273
+print(c)
