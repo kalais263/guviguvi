@@ -1,3 +1,5 @@
+def func(a):
+  b=a[::-1]
+  print(b)
 a=input()
-b=a[::-1]
-print(b)
+func(a)
