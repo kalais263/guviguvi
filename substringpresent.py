@@ -1,10 +1,11 @@
 a,b=list(map(int,input().split()))
 c=list(map(int,input().split()))[:a]
 d=list(map(int,input().split()))[:b]
+n=0
 for i in c:
-  if i in d:
-    print("YES")
-    break
-  else:
-    print("NO")
-    break
+  for i in d:
+    n=n+1
+if(n>=1):
+  print("YES")
+else:
+  print("NO")
