@@ -2,7 +2,7 @@ a=int(input())
 b=str()
 c=2
 n=0
-for i in range(0,a):
+for i in range(0,a+1):
   b=b+str(i)
 for i in b:
   if(i==str(c)):
