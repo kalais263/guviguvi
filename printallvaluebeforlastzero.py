@@ -8,4 +8,4 @@ for i in b:
     e=e+1
   elif(e!=c and i==1):
     t.append(i)
-print(*t,end="")
+print(*t,sep=" ")
