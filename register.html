@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login Form</title>
+<link rel="stylesheet" type="text/css" href="logins.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+<div class="col-sm-10" style="width:600px;
+margin-left:250px;
+margin-top:50px;">
+<div class="jumbotron">
+<div class="form-group" style="margin-top:20px;">
+<h1 style="margin-left:150px;">
+Register
+</h1>
+</div>
+<form class="form-horizontal" style="margin-left:50px;">
+<div class="form-group input-group">
+<span class="input-group-addon">
+<span class="glyphicon glyphicon-lock"></span>
+</span>
+<input type="text" class="form-control" name="Fullname" placeholder="Enter Name.." >
+</div>
+<div class="form-group input-group">
+<span class="input-group-addon">
+<span class="glyphicon glyphicon-user"></span>
+</span>
+<input type="email" class="form-control" name="email" placeholder="Enter email.."  id = "email" >
+</div>
+<div class="form-group input-group">
+<span class="input-group-addon">
+<span class="glyphicon glyphicon-lock"></span>
+</span>
+<input type="text"  class="form-control" name="department" placeholder="Enter Specialist.."   id="special" >
+</div>
+<div class="form-group input-group">
+<span class="input-group-addon">
+<span class="glyphicon glyphicon-lock"></span>
+</span>
+<input type="password" class="form-control" name="password" placeholder="Enter password.."   minlength="4" maxlength="16" >
+</div>
+<div class="form-group input-group">
+<span class="input-group-addon">
+<span class="glyphicon glyphicon-lock"></span>
+</span>
+<input type="text" class="form-control" name="Mobilenumber" placeholder="Enter Number.."  id="phone" >
+</div>
+<div class="form-group">
+<button class="btn-primary" style="width:430px;" onclick="validate()">Register</button>
+</div>	
+</form>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+function validate()
+{
+var mail=document.getElementById("email").value;
+var number=document.getElementById("phone").value;
+var special=document.getElementById("special").value;
+if(number.length =='0')
+{
+window.alert("fill the details");
+}
+if(mail.length=='0')
+{
+window.alert("Enter the mailid");
+}
+if(special.length=='0')
+{
+window.alert("Enter the specialist");
+}
+}
+</script>
+</body>
+</html>
